@@ -1,17 +1,19 @@
-# student_grade_tracker_app
+# Student Grade Tracker App
 
-A new Flutter project.
+A Flutter application built for Ostad Module 5 Assignment. This app tracks student subjects, marks, and updates real-time analytics using Provider state management.
 
-## Getting Started
+## Features
+- **Add Subject Screen:** Form with strict validation (0-100 marks).
+- **Subject List Screen:** Custom ListView with Swipe-to-Delete functionality.
+- **Summary Screen:** Live calculation of total subjects, average marks, and overall grade.
+- **Custom Theme Toggle:** Fully adaptive light and dark themes using `Theme.of(context)`.
 
-This project is a starting point for a Flutter application.
+## Architecture & Requirements Met
+- **State Management:** 100% Provider (Zero `setState` inside application logic).
+- **Encapsulation:** `Subject` class uses a private `_mark` field with a custom `grade` getter.
+- **Functional Programming:** Used `.where()` to dynamically filter passing subjects.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+1. Clone this repository.
+2. Run `flutter pub get`.
+3. Connect a device/emulator and run `flutter run`.
